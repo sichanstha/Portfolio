@@ -10,7 +10,7 @@ export default function Experience() {
     <section id="experience" aria-labelledby="experience-title" className="border-t border-line bg-alt py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading id="experience-title" eyebrow="My journey" title="Experience and Education" />
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {experience.map((e, i) => {
             const Icon = icons[e.icon] ?? Briefcase;
             return (

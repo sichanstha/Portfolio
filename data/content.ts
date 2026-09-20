@@ -1,33 +1,34 @@
-/**
- * All portfolio content lives here. Edit this file, nothing else.
- *
- * DRAFT = written for you from your project notes. Check it.
- * Empty strings ("") hide the matching button, link or card.
- */
 
 export const profile = {
   name: "Sichan",
   badge: "I'm a MERN Stack Developer",
   headline: "I build things for the web.",
-  // DRAFT
   intro:
     "MERN stack developer and third-year computing student in Nepal. I build fast, responsive web apps with React, Next.js, Node and MongoDB, and ship real client projects.",
   email: "sichanstha1@gmail.com",
-  phone: "", // e.g. "+977 98XXXXXXXX"
+  phone: "9704587202",
   github: "https://github.com/sichanstha",
-  linkedin: "", // e.g. "https://www.linkedin.com/in/your-handle"
+  linkedin: "https://www.linkedin.com/in/sichan-shrestha-7a1a87337/",
   twitter: "",
-  instagram: "",
-  resumeUrl: "", // put resume.pdf in /public, then set "/resume.pdf"
-  photo: "", // put profile.png in /public, then set "/profile.png"
-  // Free form at https://formspree.io. Paste your endpoint here.
-  formEndpoint: "https://formspree.io/f/YOUR_FORM_ID",
+  instagram: "https://www.instagram.com/sichanshrestha0/?hl=en",
+  resumeUrl: "", 
+  photo: "/portfolio.png",
+  
+  formEndpoint: "https://formspree.io/f/mdekeodp",
 };
 
-// Icon keys come from components/icons.tsx
-export const heroTech = ["html", "css", "javascript", "typescript", "react", "node", "mongodb", "tailwind", "git"];
+export const heroTech = [
+  "html",
+  "css",
+  "javascript",
+  "typescript",
+  "react",
+  "node",
+  "mongodb",
+  "tailwind",
+  "git",
+];
 
-// Shown in the floating code card in the hero
 export const codeCard = {
   name: "Sichan",
   skills: ["React", "Node", "MongoDB"],
@@ -36,18 +37,16 @@ export const codeCard = {
 
 export const about = {
   title: "I'm passionate about creating digital solutions",
-  // DRAFT
-  text: "I'm a third-year BSc (Hons) Computing student at Itahari International College, affiliated with London Metropolitan University. At YouthIT I work in the MERN stack: clean React interfaces on the front, Node and MongoDB behind them.",
-  // DRAFT: adjust the numbers to your real ones. icon: calendar | code | users | layers
+  text: "I'm a third-year BSc (Hons) Computing student at Itahari International College, affiliated with London Metropolitan University. At YouthIT I work in the MERN stack: clean React interfaces on the front, Node and MongoDB behind them. Before that I interned at Code IT, building admin panels and APIs with Laravel and Filament.",
   stats: [
-    { icon: "calendar", value: 1, suffix: "", label: "Internship at YouthIT" },
+    { icon: "calendar", value: 2, suffix: "", label: "Internships: YouthIT and Code IT" },
     { icon: "code", value: 5, suffix: "", label: "Projects built or planned" },
     { icon: "users", value: 2, suffix: "", label: "Client websites" },
     { icon: "layers", value: 6, suffix: "", label: "Core technologies" },
   ],
 };
 
-// DRAFT: levels are placeholders. Set your own honest levels (0 to 100).
+// Levels are placeholders. Set your own honest levels (0 to 100).
 export const skills = [
   { name: "React.js", level: 85, icon: "react" },
   { name: "Next.js", level: 70, icon: "next" },
@@ -57,6 +56,9 @@ export const skills = [
   { name: "Node.js", level: 70, icon: "node" },
   { name: "Express.js", level: 70, icon: "express" },
   { name: "MongoDB", level: 70, icon: "mongodb" },
+  { name: "PHP", level: 60, icon: "php" },
+  { name: "Laravel", level: 60, icon: "laravel" },
+  { name: "MySQL", level: 65, icon: "mysql" },
   { name: "Git", level: 80, icon: "git" },
 ];
 
@@ -68,15 +70,15 @@ export type Project = {
   stack: string[];
   live: string;
   code: string;
-  image: string; // screenshot in /public, e.g. "/projects/sajilo.png". Empty shows a placeholder.
+  image: string; // screenshot in /public, e.g. "/Projects/dhakal.jpeg". Empty shows a placeholder.
   color: string; // colour of the placeholder thumbnail
+  fit?: "cover" | "contain"; // cover fills the card (crops). contain shows the whole image (good for logos).
 };
 
 export const projects: Project[] = [
   {
     name: "Sajilo Webs",
     status: "Live product",
-    // DRAFT
     description:
       "A website builder for hotels, built at YouthIT. Hotels create and manage their own sites without writing code. I work on the backend.",
     stack: ["Node.js", "Express", "MongoDB"],
@@ -88,51 +90,64 @@ export const projects: Project[] = [
   {
     name: "Dhakal Samaj",
     status: "Client project",
-    // DRAFT
     description:
       "A community and genealogy platform. I built the About and Contact pages, history, timeline, branches and team sections, and a split-panel login.",
     stack: ["React", "TypeScript", "Tailwind CSS", "Zod"],
     live: "",
     code: "",
-    image: "",
+    image: "/Projects/Dhakal.jpeg",
     color: "#2057bd",
+    fit: "cover",
   },
   {
     name: "Ritz College of Hotel Management",
     status: "Client project",
-    // DRAFT
     description:
       "A website for a hotel management college. I built the internship partners page and the photo gallery.",
     stack: ["React", "TypeScript", "Tailwind CSS"],
     live: "",
     code: "",
-    image: "",
+    image: "/Projects/Ritiz.jpeg",
     color: "#0e9f8e",
+    fit: "contain",
+  },
+    {
+    name: "Amazon Clone",
+    status: "Practice project",
+    description:
+      "My first Git repository: a clone of the Amazon website built with HTML and CSS.",
+    stack: ["HTML", "CSS"],
+    live: "",
+    code: "https://github.com/sichanstha/Amozon-clone",
+    image: "/Projects/Amazon.webp",
+    color: "#ff9900",
+    fit: "cover",
   },
   {
     name: "Manakamana Hardware",
-    status: "Family business",
-    // DRAFT
+    status: "Family business, upcoming",
+    upcoming: true,
     description:
       "A full-stack website for my family's hardware company in Dharan, with an admin dashboard for managing the site.",
     stack: ["MongoDB", "Express", "React", "Node.js"],
     live: "",
     code: "",
-    image: "",
+    image: "/Projects/Manakamana.png",
     color: "#d97706",
+    fit: "contain",
   },
   {
     name: "Nepal Smart Accident and Emergency Response System",
     status: "Final year project, upcoming",
     upcoming: true,
-    // DRAFT
     description:
       "A web platform connecting citizens, ambulances and hospitals in emergencies, with dashboards for five roles.",
     stack: ["React 19", "TypeScript", "Tailwind CSS", "Vite"],
     live: "",
     code: "",
-    image: "",
+    image: "/Projects/NS-AERS.jpg",
     color: "#dc2626",
+    fit: "cover",
   },
 ];
 
@@ -141,10 +156,21 @@ export const experience = [
     icon: "briefcase",
     title: "MERN Stack Developer Intern",
     org: "YouthIT",
-    period: "2026 to present", // DRAFT: use your real dates
+    period: "2026 to present", // set your real start date
     points: [
       "Built responsive React, TypeScript and Tailwind CSS pages for client projects.",
       "Worked on the backend of Sajilo Webs, a hotel website builder.",
+    ],
+  },
+  {
+    icon: "briefcase",
+    title: "Full Stack Developer Intern (Laravel and Filament)",
+    org: "Code IT, Dharan",
+    period: "Feb 2026 to Apr 2026",
+    points: [
+      "Built admin panels and resource management with Laravel and FilamentPHP.",
+      "Worked with MySQL and Eloquent ORM, and developed RESTful APIs.",
+      "Integrated the frontend, debugged issues and worked in a team.",
     ],
   },
   {
@@ -152,7 +178,9 @@ export const experience = [
     title: "BSc (Hons) Computing",
     org: "Itahari International College, London Metropolitan University",
     period: "Third year",
-    points: ["Coursework in software engineering, Java web technologies and data analysis with Power BI."],
+    points: [
+      "Coursework in software engineering, Java web technologies and data analysis with Power BI.",
+    ],
   },
 ];
 

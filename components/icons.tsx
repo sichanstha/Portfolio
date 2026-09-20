@@ -1,6 +1,6 @@
 import type { IconType } from "react-icons";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiPhp, SiLaravel, SiMysql } from "react-icons/si";
 
 export const techIcons: Record<string, { Icon: IconType; color: string; label: string }> = {
   html: { Icon: FaHtml5, color: "#E34F26", label: "HTML5" },
@@ -13,5 +13,8 @@ export const techIcons: Record<string, { Icon: IconType; color: string; label: s
   express: { Icon: SiExpress, color: "#FFFFFF", label: "Express" },
   mongodb: { Icon: SiMongodb, color: "#47A248", label: "MongoDB" },
   tailwind: { Icon: SiTailwindcss, color: "#38BDF8", label: "Tailwind CSS" },
+  php: { Icon: SiPhp, color: "#777BB4", label: "PHP" },
+  laravel: { Icon: SiLaravel, color: "#FF2D20", label: "Laravel" },
+  mysql: { Icon: SiMysql, color: "#4479A1", label: "MySQL" },
   git: { Icon: FaGitAlt, color: "#F05032", label: "Git" },
 };

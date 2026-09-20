@@ -68,8 +68,7 @@ export default function Hero() {
 
           <motion.div {...rise(0.42)} className="mt-8 flex flex-wrap gap-3">
             <Magnetic>
-              <a
-                href="#projects"
+              <a href="#projects"
                 className="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-brand to-brand2 px-6 py-3 font-medium text-white shadow-[0_8px_30px_rgba(124,92,255,0.4)] transition-shadow hover:shadow-[0_8px_40px_rgba(124,92,255,0.65)]"
               >
                 View My Work <ArrowUpRight size={18} aria-hidden />
@@ -117,26 +116,27 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease }}
           className="relative mx-auto aspect-square w-full max-w-[26rem] lg:max-w-[30rem]"
         >
-          <div aria-hidden className="orbit absolute inset-0 rounded-full border border-dashed border-soft/30" />
           <div aria-hidden className="dots absolute -right-2 top-0 h-20 w-24 opacity-60" />
+          {profile.photo && <div aria-hidden className="absolute inset-[12%] rounded-full bg-brand/30 blur-3xl" />}
+          {!profile.photo && <div aria-hidden className="orbit absolute inset-0 rounded-full border border-dashed border-soft/30" />}
 
-          <div className="absolute inset-[9%] overflow-hidden rounded-full bg-linear-to-br from-brand to-brand2 shadow-[0_0_120px_rgba(124,92,255,0.45)]">
-            {profile.photo ? (
-              <Image
-                src={profile.photo}
-                alt={`Portrait of ${profile.name}`}
-                fill
-                priority
-                sizes="(min-width: 1024px) 420px, 80vw"
-                className="object-cover object-top"
-              />
-            ) : (
+          {profile.photo ? (
+            <Image
+              src={profile.photo}
+              alt={`Portrait of ${profile.name}`}
+              fill
+              priority
+              sizes="(min-width: 1024px) 480px, 90vw"
+              className="object-contain object-bottom drop-shadow-[0_20px_50px_rgba(124,92,255,0.35)]"
+            />
+          ) : (
+            <div className="absolute inset-[9%] overflow-hidden rounded-full bg-linear-to-br from-brand to-brand2 shadow-[0_0_120px_rgba(124,92,255,0.45)]">
               <svg viewBox="0 0 200 200" aria-hidden className="absolute inset-0 size-full">
                 <circle cx="100" cy="82" r="34" fill="#0b1030" opacity="0.85" />
                 <path d="M30 200c0-44 30-70 70-70s70 26 70 70z" fill="#0b1030" opacity="0.85" />
               </svg>
-            )}
-          </div>
+            </div>
+          )}
 
           <motion.div
             animate={{ y: [0, -10, 0] }}

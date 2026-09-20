@@ -16,7 +16,6 @@ const field =
 const socials = [
   { href: profile.github, label: "GitHub", Icon: FaGithub },
   { href: profile.linkedin, label: "LinkedIn", Icon: FaLinkedinIn },
-  { href: profile.twitter, label: "Twitter", Icon: FaTwitter },
   { href: profile.instagram, label: "Instagram", Icon: FaInstagram },
 ].filter((s) => s.href);
 
