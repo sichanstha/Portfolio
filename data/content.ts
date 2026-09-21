@@ -123,6 +123,18 @@ export const projects: Project[] = [
     color: "#ff9900",
     fit: "cover",
   },
+    {
+    name: "Shoot Sync",
+    status: "[Client project / Company project / Personal project]",
+    description:
+      "[One or two sentences: what Shoot Sync does, and what YOU built in it.]",
+    stack: ["[React]", "[TypeScript]", "[Tailwind CSS]"],
+    live: "", 
+    code: "", 
+    image: "", 
+    color: "#7c5cff",
+    fit: "cover",
+  },
   {
     name: "Manakamana Hardware",
     status: "Family business, upcoming",
