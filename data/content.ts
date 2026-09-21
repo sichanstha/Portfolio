@@ -131,10 +131,22 @@ export const projects: Project[] = [
     stack: ["[React]", "[TypeScript]", "[Tailwind CSS]"],
     live: "", 
     code: "", 
-    image: "", 
+    image: "/Projects/blogimage.png",
     color: "#7c5cff",
     fit: "cover",
   },
+  {
+  name: "Bus Management System",
+  status: "Personal project",
+  description:
+    "A web app for managing buses, built with React and Vite.",
+  stack: ["React", "Vite"],
+  live: "",
+  code: "https://github.com/sichanstha/Bus-Managemenet-System",
+  image: "/Projects/OIP.webp",
+  color: "#0ea5e9",
+  fit: "cover",
+},
   {
     name: "Manakamana Hardware",
     status: "Family business, upcoming",
