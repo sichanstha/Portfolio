@@ -40,7 +40,7 @@ export const about = {
   text: "I'm a third-year BSc (Hons) Computing student at Itahari International College, affiliated with London Metropolitan University. At YouthIT I work in the MERN stack: clean React interfaces on the front, Node and MongoDB behind them. Before that I interned at Code IT, building admin panels and APIs with Laravel and Filament.",
 stats: [
   { icon: "calendar", value: 2, suffix: "", label: "Internships: YouthIT and Code IT" },
-  { icon: "code", value: 8, suffix: "", label: "Projects built or planned" },
+  { icon: "code", value: 9, suffix: "", label: "Projects built or planned" },
   { icon: "users", value: 3, suffix: "", label: "Client projects" },
   { icon: "layers", value: 6, suffix: "", label: "Core technologies" },
 ],
@@ -123,6 +123,18 @@ export const projects: Project[] = [
     color: "#ff9900",
     fit: "cover",
   },
+  {
+  name: "SportifyGear",
+  status: "Personal project",
+  description:
+    "A sports gear web app built with Laravel and PHP.",
+  stack: ["Laravel", "PHP", "MySQL"],
+  live: "",
+  code: "https://github.com/sichanstha/SportifyGear",
+  image: "/Projects/Sportify.jpeg",
+  color: "#ef4444",
+  fit: "cover",
+},
     {
     name: "Shoot Sync",
     status: "[Client project / Company project / Personal project]",
