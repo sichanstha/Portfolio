@@ -38,12 +38,12 @@ export const codeCard = {
 export const about = {
   title: "I'm passionate about creating digital solutions",
   text: "I'm a third-year BSc (Hons) Computing student at Itahari International College, affiliated with London Metropolitan University. At YouthIT I work in the MERN stack: clean React interfaces on the front, Node and MongoDB behind them. Before that I interned at Code IT, building admin panels and APIs with Laravel and Filament.",
-  stats: [
-    { icon: "calendar", value: 2, suffix: "", label: "Internships: YouthIT and Code IT" },
-    { icon: "code", value: 5, suffix: "", label: "Projects built or planned" },
-    { icon: "users", value: 2, suffix: "", label: "Client websites" },
-    { icon: "layers", value: 6, suffix: "", label: "Core technologies" },
-  ],
+stats: [
+  { icon: "calendar", value: 2, suffix: "", label: "Internships: YouthIT and Code IT" },
+  { icon: "code", value: 8, suffix: "", label: "Projects built or planned" },
+  { icon: "users", value: 3, suffix: "", label: "Client projects" },
+  { icon: "layers", value: 6, suffix: "", label: "Core technologies" },
+],
 };
 
 // Levels are placeholders. Set your own honest levels (0 to 100).
