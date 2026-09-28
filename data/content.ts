@@ -64,7 +64,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "Sajilo Webs",
-    status: "Live product",
+    status: "Client-Product",
     description:
       "A website builder for hotels, built at YouthIT. Hotels create and manage their own sites without writing code. I work on the backend.",
     stack: ["Node.js", "Express", "MongoDB"],
@@ -73,6 +73,18 @@ export const projects: Project[] = [
     image: "/Projects/Sajilows.jpeg",
     color: "#7c5cff",
   },
+  {
+  name: "Stock-Nep",
+  status: "Client project",
+  description:
+    "A stock management web application for managing products, inventory, and stock-related operations.",
+  stack: ["React", "TypeScript", "Tailwind CSS"],
+  live: "https://app.stocknep.com/auth/login",
+  code: "",
+  image: "/Projects/Stock-Nep.png",
+  color: "#3b82f6",
+  fit: "contain",
+},
   {
     name: "Dhakal Samaj",
     status: "Client project",
@@ -97,18 +109,7 @@ export const projects: Project[] = [
     color: "#0e9f8e",
     fit: "contain",
   },
-  {
-    name: "SportifyGear",
-    status: "Personal project",
-    description:
-      "A sports gear web app built with Laravel and PHP.",
-    stack: ["Laravel", "PHP", "MySQL"],
-    live: "",
-    code: "https://github.com/sichanstha/SportifyGear",
-    image: "/Projects/Sportify.jpeg",
-    color: "#ef4444",
-    fit: "cover",
-  },
+  
   {
     name: "Shoot Sync",
     status: "[Client project / Company project / Personal project]",
@@ -119,6 +120,18 @@ export const projects: Project[] = [
     code: "",
     image: "/Projects/blogimage.png",
     color: "#7c5cff",
+    fit: "cover",
+  },
+  {
+    name: "SportifyGear",
+    status: "Personal project",
+    description:
+      "A sports gear web app built with Laravel and PHP.",
+    stack: ["Laravel", "PHP", "MySQL"],
+    live: "",
+    code: "https://github.com/sichanstha/SportifyGear",
+    image: "/Projects/Sportify.jpeg",
+    color: "#ef4444",
     fit: "cover",
   },
   {
