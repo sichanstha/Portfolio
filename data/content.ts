@@ -91,7 +91,7 @@ export const projects: Project[] = [
     description:
       "A website for a hotel management college. I built the internship partners page and the photo gallery.",
     stack: ["React", "TypeScript", "Tailwind CSS"],
-    live: "",
+    live: " https://ritzclone.vercel.app",
     code: "",
     image: "/Projects/Ritiz.jpeg",
     color: "#0e9f8e",
